@@ -26,36 +26,36 @@
 
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('admin/customer/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+						<a href="<?php echo site_url('admin/supplier/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
 					</div>
 					<div class="card-body">
 
-						<form action="<?php base_url('admin/customer/add') ?>" method="post" enctype="multipart/form-data" >
+						<form action="<?php base_url('admin/supplier/add') ?>" method="post" enctype="multipart/form-data" >
 							<div class="form-group">
-								<label for="name">Customer ID</label>
-								<input class="form-control <?php echo form_error('customer_id') ? 'is-invalid':'' ?>"
-								 type="number" name="customer_id" placeholder="Customer ID" />
+								<label for="name">Supplier ID</label>
+								<input class="form-control <?php echo form_error('supplier_id') ? 'is-invalid':'' ?>"
+								 type="number" name="supplier_id" placeholder="Supplier ID" />
 								<div class="invalid-feedback">
-									<?php echo form_error('customer_id') ?>
+									<?php echo form_error('supplier_id') ?>
 								</div>
 							</div>
 
 							<div class="form-group">
 								<label for="name">Name</label>
-								<input class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>"
-								 type="text" name="name" min="0" placeholder="Customer Name" />
+								<input class="form-control <?php echo form_error('supplier_name') ? 'is-invalid':'' ?>"
+								 type="text" name="supplier_name" min="0" placeholder="Supplier Name" />
 								<div class="invalid-feedback">
-									<?php echo form_error('name') ?>
+									<?php echo form_error('supplier_name') ?>
 								</div>
 							</div>
 
 
 							<div class="form-group">
 								<label for="name">Address</label>
-								<input class="form-control <?php echo form_error('address') ? 'is-invalid':'' ?>"
-								 type="text" name="address" min="0" placeholder="Customer Address" />
+								<input class="form-control <?php echo form_error('supplier_address') ? 'is-invalid':'' ?>"
+								 type="text" name="supplier_address" min="0" placeholder="Supplier Address" />
 								<div class="invalid-feedback">
-									<?php echo form_error('address') ?>
+									<?php echo form_error('supplier_address') ?>
 								</div>
 							</div>
 
